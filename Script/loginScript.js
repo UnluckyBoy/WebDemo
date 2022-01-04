@@ -6,17 +6,6 @@ $(function() {
     var login = document.getElementById("login-btn");
     var register = document.getElementById("register-btn");
 
-    //获取input框内的值
-
-    /*
-    var mAccount = $("#account").val();
-    var mPassword = $("#password").val();
-    var name = $("#up_name").val();
-    var account = $("#up_account").val();
-    var password = $("#up_password").val();
-    var confirm = $("#up_confirm").val(); 
-    */
-
     login.onclick = function() {
         if (($("#account").val() == null || $("#account").val() == "") ||
             ($("#password").val() == null || $("#password").val() == "")) {
