@@ -6,8 +6,10 @@
     <title>首页</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script type="text/javascript" src="../Script/Jquery-min-1.8.0.js"></script>
-    <link rel="stylesheet" href="../CSS/font-awesome.css" />
+    <script type="text/javascript" src="../Script/vue.js"></script>
     <link rel="stylesheet" href="../CSS/index_menu.css" />
+    <!--CDN图标库-->
+    <link href="../CSS/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,8 +19,8 @@
         <input type="checkbox" id="checkbox" />
         <!-- 复选框的id属性值和label元素的for属性值必须是相同的,才能够通过点击label选中复选框 -->
         <label for="checkbox">
-            <i class="fa fa-bars"></i>
-        </label>
+        <i class="fa fa-bars"></i>
+    </label>
         <ul>
             <li>
                 <!--<img src="../Image/1.jpg" alt="" id="handImage" /> -->
@@ -27,33 +29,39 @@
                 <span id="uName"></span>
             </li>
             <li>
-                <a href="javascript:void(0)">
+                <a href="../index.html">
                     <i class="fa fa-home"></i>
-                    <span>后台首页</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="fa fa-sitemap"></i>
-                    <span>商品列表</span>
+                    <span>首页</span>
                 </a>
             </li>
             <li>
                 <a href="javascript:void(0)">
                     <i class="fa fa-user"></i>
-                    <span>用户列表</span>
+                    <span>个人信息</span>
                 </a>
             </li>
             <li>
                 <a href="javascript:void(0)">
-                    <i class="fa fa-shopping-cart"></i>
-                    <span>订单列表</span>
+                    <i class="fa fa-star-half-o"></i>
+                    <span>新奇杂谈</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-comments-o"></i>
+                    <span>动态论坛</span>
                 </a>
             </li>
             <li>
                 <a href="javascript:void(0)">
                     <i class="fa fa-windows"></i>
-                    <span>功能列表</span>
+                    <span>更多功能</span>
+                </a>
+            </li>
+            <li>
+                <a href="../login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span>退出</span>
                 </a>
             </li>
         </ul>

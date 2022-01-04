@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    background: -webkit-linear-gradient(left, #b224ef, #7579ff);
 }
 
 input,
