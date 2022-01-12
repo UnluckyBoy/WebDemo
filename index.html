@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>首页</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="text/javascript" src="../Script/Jquery-min-1.8.0.js"></script>
+        <script type="text/javascript" src="../Script/vue.js"></script>
+        <link rel="stylesheet" href="../CSS/index_style.css" />
+        <!--CDN图标库-->
+        <link href="../CSS/font-awesome.min.css" rel="stylesheet">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>首页</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script type="text/javascript" src="../Script/Jquery-min-1.8.0.js"></script>
-    <script type="text/javascript" src="../Script/vue.js"></script>
-    <link rel="stylesheet" href="../CSS/index_menu.css" />
-    <!--CDN图标库-->
-    <link href="../CSS/font-awesome.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <script type="text/javascript" src="../Script/index.js"></script>
-    <!--菜单栏-->
-    <div class="navbar">
-        <input type="checkbox" id="checkbox" />
-        <!-- 复选框的id属性值和label元素的for属性值必须是相同的,才能够通过点击label选中复选框 -->
-        <label for="checkbox">
-        <i class="fa fa-bars"></i>
-    </label>
-        <ul>
-            <li>
-                <!--<img src="../Image/1.jpg" alt="" id="handImage" /> -->
-                <img src="" alt="" id="handImage" />
-
-                <span id="uName"></span>
-            </li>
-            <li>
-                <a href="../index.html">
-                    <i class="fa fa-home"></i>
-                    <span>首页</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="fa fa-user"></i>
-                    <span>个人信息</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="fa fa-star-half-o"></i>
-                    <span>新奇杂谈</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="fa fa-comments-o"></i>
-                    <span>动态论坛</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0)">
-                    <i class="fa fa-windows"></i>
-                    <span>更多功能</span>
-                </a>
-            </li>
-            <li>
-                <a href="../login.html">
-                    <i class="fa fa-sign-out"></i>
-                    <span>退出</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!--
-    <canvas id="_rain_star">
-        <script type="text/javascript" src="../Script/rainstar.js"></script>
-    </canvas>
-    -->
-</body>
-
+    <body>
+        <script type="text/javascript" src="../Script/index.js"></script>
+        <!--主页样式-->
+        <div class="wrap">
+            <div class="nav">
+                <!--按钮组-->
+                <div class="btn">
+                    <div class="btn-item"></div>
+                    <div class="btn-item"></div>
+                    <div class="btn-item"></div>
+                </div>
+                <!--头像和昵称-->
+                <div class="icon">
+                    <div class="icon-img"><img src="" alt="" id="handImage"/></div>
+                    <div class="icon-con">
+                        <p>您好！</p>
+                        <h2 id="uName"></h2>
+                    </div>
+                </div>
+                <!--第一个分割线和标题-->
+                <div class="line"></div>
+                <div class="title"><p></p></div>
+                <div class="menu"> 
+                    <a href="../index.html">
+                        <div class="item">
+                            <div class="light"></div>
+                            <div class="licon">
+                                <span class="fa fa-home"></span>
+                            </div>
+                            <div class="con">首页</div>
+                            <div class="ricon"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <div class="light"></div>
+                            <div class="licon">
+                                <span class="fa fa-star-half-o"></span>
+                            </div>
+                            <div class="con">其他</div>
+                            <div class="ricon"></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <div class="light"></div>
+                            <div class="licon">
+                                <span class="fa fa-windows"></span>
+                            </div>
+                            <div class="con">更多</div>
+                            <div class="ricon"></div>
+                        </div>
+                    </a>
+                    <a href="../login.html">
+                        <div class="item">
+                            <div class="light"></div>
+                            <div class="licon"><span class="fa fa-sign-out"></span></div>
+                            <div class="con">退出</div>
+                            <div class="ricon"></div>
+                        </div>
+                    </a>
+                </div>
+                <!--第二个分割线-->
+                <div class="line"></div>
+                <div class="title"><p></p></div>
+                <div class="server">
+                    <div class="item">
+                        <div class="licon"><span class="fa fa-user"></span></div>
+                        <div class="con">用户</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><span class="fa fa-search-minus"></span></div>
+                        <div class="con">搜索</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><span class="fa fa-cog"></span></div>
+                        <div class="con">设置</div>
+                        <div class="ricon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

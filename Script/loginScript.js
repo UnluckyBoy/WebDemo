@@ -18,13 +18,17 @@ $(function() {
                 dataType: "json",
                 async: true,
                 data: "account=" + $("#account").val() + "&password=" + $("#password").val(),
-                success: function(result) {
-                    if (result != null) {
-                        console.log(result);
+                success: function(resultSource) {
+                    var result=$.parseJSON(JSON.stringify(resultSource));
+                    if (result.result == "error") {
+                        console.log(result+"类型:"+typeof(result));
                         //登录成功，保存cookie
-                        //document.cookie = result.token;
-                        window.location.href = "../index.html?data=" + window.encodeURIComponent(JSON.stringify(result)); //将result转Json传输
-                        //alert("To-Json: " + JSON.stringify(result));
+                        //document.cookie = result;
+                        //console.log(document.cookie.image);
+                        
+                        alert("账户未注册，请检查！" + $("#account").val());
+                    }else{
+                        window.location.href = "../index.html?data=" + window.encodeURIComponent(JSON.stringify(resultSource)); //将result转Json传输
                     }
                 },
                 error: function(msg) {
