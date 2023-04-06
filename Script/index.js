@@ -2,6 +2,10 @@
  * DOM加载完直接执行，用于加载图片等
  */
 $(function() {
+
+    // var cookie=document.cookie;
+    // console.log("登录Cookie:" + cookie+"  格式:"+typeof(cookie))
+
     //decodeURIComponent解编码，用 location.search 来获取传递值
     var str = decodeURIComponent(location.search.slice(1).split("=")[1])
     if (str != null || str != "") {

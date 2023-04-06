@@ -28,13 +28,22 @@ $(function() {
                         
                         alert("账户未注册，请检查！" + $("#account").val());
                     }else{
-                        window.location.href = "../index.html?data=" + window.encodeURIComponent(JSON.stringify(resultSource)); //将result转Json传输
+                        //登录成功，保存cookie
+                        //document.cookie=JSON.stringify(resultSource);
+
+                        console.log(result+"类型:"+typeof(result)+JSON.stringify(resultSource));
+                        //window.location.href = "../index.html?data=" + window.encodeURIComponent(JSON.stringify(resultSource)); //将result转Json传输
+                        //window.location.href = "../index.html";
+                        //form.action = "../index.html";
+                        var form = document.querySelector('form-sign-in');//表单
+                        console.log("表单:"+form);
                     }
                 },
                 error: function(msg) {
 
                 }
             });
+
         }
     }
 
